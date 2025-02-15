@@ -131,6 +131,7 @@ form .search-field button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
   padding: 20px;
   width: 50%;
@@ -226,4 +227,49 @@ form .search-field button:hover {
 
 .recipe-card a:hover {
   transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+footer .footer-content, footer .footer-credits {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-content p {
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+}
+
+footer .social-icons a:hover {
+  color: var(--secondary-accent);
+}
+
+footer .footer-credits {
+  align-items: flex-end;
+}
+
+footer .footer-credits a {
+  color: var(--secondary-accent);
+  text-decoration: underline;
+}
+
+footer .footer-credits a:hover {
+  color: var(--secondary-accent-hover);
 }

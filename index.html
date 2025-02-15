@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Odin Recipes</title>
-    <script src="js/script.js" defer></script>
-  </head>
-  <body class="light-theme">
-    <div class="container">
-      <!-- Navbar -->
-      <div class="navbar">
-        <nav>
-          <div class="logo">
-            <i class="bx bx-bowl-hot"></i>
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Recipes</a></li>
-            </ul>
-          </div>
-          <form action="#">
-            <div class="search-field">
-              <input
-                type="search"
-                id="search-recipe"
-                name="search-recipe"
-                placeholder="Search..."
-              />
-              <button type="submit"><i class="bx bx-search"></i></button>
-            </div>
-          </form>
-          <div class="theme-switcher">
-            <i class="bx bx-moon" id="theme-switch"></i>
-          </div>
-        </nav>
-      </div>
 
-      <!-- Main content -->
-      <div class="content">
-        <!-- Headline -->
-        <div class="headline">
-          <div class="headline-image">
-            <a href="https://www.vecteezy.com/free-png/cooking">
-              <img
-                src="images/ingredients.png"
-                alt="Ingredients"
-                title="Cooking PNGs by Vecteezy"
-              />
-            </a>
-          </div>
-          <div class="headline-section">
-            <h1>Odin Recipes</h1>
-            <p>Delicious recipes from around the world!</p>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Odin Recipes</title>
+  <script src="js/script.js" defer></script>
+</head>
 
-        <!-- Recipes Section -->
-        <div class="recipes">
-          <h1>Have a look at the amazing recipes!</h1>
-          <div class="recipe-cards">
-            <div class="recipe-card">
-              <img src="images/baked-beans.jpg" alt="Baked Beans" />
-              <h2>Baked Beans</h2>
-              <p>Delicious baked beans recipe</p>
-              <a href="recipes/baked-beans.html">View Recipe</a>
-            </div>
-            <div class="recipe-card">
-              <img src="images/pasta-salad.jpg" alt="Pasta Salad" />
-              <h2>Pasta Salad</h2>
-              <p>Delicious pasta salad recipe</p>
-              <a href="recipes/pasta-salad.html">View Recipe</a>
-            </div>
-            <div class="recipe-card">
-              <img src="images/popcorn.png" alt="Popcorn" />
-              <h2>Popcorn</h2>
-              <p>Delicious popcorn recipe</p>
-              <a href="recipes/popcorn.html">View Recipe</a>
-            </div>
-          </div>
+<body class="light-theme">
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <i class="bx bx-bowl-hot"></i>
         </div>
-      </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recipes</a></li>
+          </ul>
+        </div>
+        <form action="#">
+          <div class="search-field">
+            <input type="search" id="search-recipe" name="search-recipe" placeholder="Search..." />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </div>
+        </form>
+        <div class="theme-switcher">
+          <i class="bx bx-moon" id="theme-switch"></i>
+        </div>
+      </nav>
     </div>
-  </body>
+
+    <!-- Main content -->
+    <div class="content">
+      <!-- Headline -->
+      <div class="headline">
+        <div class="headline-image">
+          <a href="https://www.vecteezy.com/free-png/cooking">
+            <img src="images/ingredients.png" alt="Ingredients" title="Cooking PNGs by Vecteezy" />
+          </a>
+        </div>
+        <div class="headline-section">
+          <h1>Odin Recipes</h1>
+          <p>Delicious recipes from around the world!</p>
+        </div>
+      </div>
+
+      <!-- Recipes Section -->
+      <div class="recipes">
+        <h1>Have a look at the amazing recipes!</h1>
+        <div class="recipe-cards">
+          <div class="recipe-card">
+            <img src="images/baked-beans.jpg" alt="Baked Beans" />
+            <h2>Baked Beans</h2>
+            <p>Delicious baked beans recipe</p>
+            <a href="recipes/baked-beans.html">View Recipe</a>
+          </div>
+          <div class="recipe-card">
+            <img src="images/pasta-salad.jpg" alt="Pasta Salad" />
+            <h2>Pasta Salad</h2>
+            <p>Delicious pasta salad recipe</p>
+            <a href="recipes/pasta-salad.html">View Recipe</a>
+          </div>
+          <div class="recipe-card">
+            <img src="images/popcorn.png" alt="Popcorn" />
+            <h2>Popcorn</h2>
+            <p>Delicious popcorn recipe</p>
+            <a href="recipes/popcorn.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <h3>Contact Information</h3>
+          <p>&copy; Fidel Isaboke</p>
+          <div class="social-icons">
+            <a href="https://github.com/Fidelisaboke/odin-recipes"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-credits">
+          <h3>Credits</h3>
+          <p>
+            <a href="https://www.vecteezy.com/free-png/cooking">Cooking PNGs by Vecteezy</a>
+          </p>
+          <p>
+            <a href="https://www.allrecipes.com/recipe/21519/simple-baked-beans-ii/">Simple Baked Beans Recipe</a>
+          </p>
+          <p>
+            <a href="https://www.allrecipes.com/recipe/14385/pasta-salad/">Pasta Salad Recipe</a>
+          </p>
+          <p>
+            <a href="https://www.simplyrecipes.com/recipes/perfect_popcorn/">Perfect Popcorn</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>

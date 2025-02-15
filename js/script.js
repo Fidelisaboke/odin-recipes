@@ -23,7 +23,7 @@ btnThemeSwitch.addEventListener("click", () => {
         body.classList.contains("light-theme") ? "dark-theme" : "light-theme"
     );
     const isLightMode = body.classList.toggle("light-theme");
-    const classReplaced = themeSwitcherIcon.classList.replace(
+    themeSwitcherIcon.classList.replace(
         themeSwitcherIconClass,
         isLightMode ? "bx-moon" : "bx-sun"
     );

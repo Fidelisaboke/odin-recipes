@@ -16,10 +16,12 @@
   --primary-bg: #1c1c1c;
   --primary-text: #ffffff;
   --primary-accent: #00bfff;
+  --primary-accent-hover: #2dacd6;
 
   --secondary-bg: #292929;
   --secondary-text: #ffffff;
   --secondary-accent: #4278ff;
+  --secondary-accent-hover: #30bceb;
 
   --link-text: #ffffff;
   --placeholder-text: #6f6f6f;
@@ -38,6 +40,7 @@
   --secondary-bg: #f9f9f9;
   --secondary-text: #1c1c1c;
   --secondary-accent: #2695ba;
+  --secondary-accent-hover: #30bceb;
 
   --link-text: #ffffff;
   --placeholder-text: #9e9e9e;

@@ -1,3 +1,7 @@
+/**
+* GLOBAL STYLES
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -10,13 +14,14 @@
 /* Dark mode colors */
 :root {
   --primary-bg: #1c1c1c;
-  --primary-text: #f1f1f1;
-  --primary-accent: #ff9800;
+  --primary-text: #ffffff;
+  --primary-accent: #00bfff;
 
   --secondary-bg: #292929;
-  --secondary-text: #d4d4d4;
-  --secondary-accent: #ff5722;
+  --secondary-text: #ffffff;
+  --secondary-accent: #4278ff;
 
+  --link-text: #ffffff;
   --placeholder-text: #6f6f6f;
 
   --border-color: #3a3a3a;
@@ -27,22 +32,29 @@
 .light-theme {
   --primary-bg: #ffffff;
   --primary-text: #1c1c1c;
-  --primary-accent: #ff9800;
+  --primary-accent: #30cbff;
+  --primary-accent-hover: #30bceb;
 
   --secondary-bg: #f9f9f9;
-  --secondary-text: #4a4a4a;
-  --secondary-accent: #ff5722;
+  --secondary-text: #1c1c1c;
+  --secondary-accent: #2695ba;
 
+  --link-text: #ffffff;
   --placeholder-text: #9e9e9e;
 
   --border-color: #e0e0e0;
   --highlight-bg: #f2f2f2;
 }
 
- a {
+a {
   text-decoration: none;
- }
+  color: var(--primary-text);
+}
 
- ul {
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
   list-style-type: none;
- }
+}

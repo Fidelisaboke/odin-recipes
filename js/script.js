@@ -27,6 +27,4 @@ btnThemeSwitch.addEventListener("click", () => {
         themeSwitcherIconClass,
         isLightMode ? "bx-moon" : "bx-sun"
     );
-    console.log(classReplaced);
-    console.log(themeSwitcherIcon.classList);
 });

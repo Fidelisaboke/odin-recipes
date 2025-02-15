@@ -1,25 +1,37 @@
 @import url("styles.css");
 
+body {
+  background-color: var(--primary-bg);
+}
+
 .container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  max-width: 1280px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--primary-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .navbar nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 10px 20px;
   height: 60px;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--primary-bg);
+  max-width: 1280px;
   color: var(--primary-text);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: 1.2rem;
+  margin: 0 auto;
 }
 
 .navbar .logo {
@@ -44,6 +56,10 @@
   margin: 1.5rem;
 }
 
+.navbar form {
+  flex: 0.5 1 auto;;
+}
+
 form .search-field {
   position: relative;
   display: flex;
@@ -56,14 +72,16 @@ form .search-field {
 form .search-field input {
   width: 100%;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: 1px solid var(--primary-accent);
   border-radius: 5px;
   margin-right: 10px;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
 }
 
 form .search-field input:focus {
-  outline: none;
+  outline: 2px solid var(--secondary-accent);
 }
 
 form .search-field input::placeholder {
@@ -76,11 +94,11 @@ form .search-field input:focus::placeholder {
 
 form .search-field button {
   position: absolute;
-  right: 0;
+  right: 10px;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: 1px solid var(--primary-accent);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;;
   background-color: var(--primary-accent);
   color: var(--primary-text);
 }
@@ -164,8 +182,8 @@ form .search-field button:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 20px;
   width: 100%;
 }
 
@@ -176,7 +194,7 @@ form .search-field button:hover {
 
 .recipe-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -265,6 +283,10 @@ footer .footer-credits {
   align-items: flex-end;
 }
 
+footer .footer-credits p {
+  margin-bottom: 10px;
+}
+
 footer .footer-credits a {
   color: var(--secondary-accent);
   text-decoration: underline;
@@ -272,4 +294,139 @@ footer .footer-credits a {
 
 footer .footer-credits a:hover {
   color: var(--secondary-accent-hover);
+}
+
+
+/* Responsive styles */
+/* Small devices (between 600px and 768px) */
+@media screen and (max-width: 768px) {
+  .navbar nav {
+    font-size: 1rem;
+  }
+
+  .navbar .logo {
+    height: 36px;
+    width: 36px;
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  .headline {
+    height: 400px;
+  }
+
+  .headline-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .headline-section p {
+    font-size: 1.2rem;
+  }
+
+  .recipe-card:nth-child(even) {
+    transform: translateY(0px);
+  }
+
+  .recipes h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .recipe-card p {
+    font-size: 1rem;
+  }
+
+  .recipe-card a {
+    font-size: 1rem;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-content p {
+    font-size: 1rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices (less than 600px) */
+@media screen and (max-width: 600px) {
+  .navbar nav {
+    font-size: 0.8rem;
+  }
+
+  .navbar .logo {
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+  }
+
+  .nav-links ul li {
+    margin: 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  form .search-field input {
+    font-size: 0.8rem;
+  }
+
+  form .search-field button {
+    font-size: 0.8rem;
+  }
+
+  .headline {
+    height: 300px;
+  }
+
+  .headline-section h1 {
+    font-size: 2rem;
+  }
+
+  .headline-section p {
+    font-size: 1rem;
+  }
+
+  .recipe-card:nth-child(even) {
+    transform: translateY(0px);
+  }
+
+  .recipes h1 {
+    font-size: 1.8rem;
+  }
+
+  .recipe-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .recipe-card p {
+    font-size: 0.8rem;
+  }
+
+  .recipe-card a {
+    font-size: 0.8rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+  }
+
+  footer .footer-content p {
+    font-size: 0.8rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1rem;
+  }
+  
 }

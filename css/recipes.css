@@ -1,0 +1,13 @@
+@import url('styles.css');
+
+.home-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

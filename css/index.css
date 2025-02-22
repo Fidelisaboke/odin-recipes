@@ -1,16 +1,5 @@
 @import url("styles.css");
 
-body {
-  background-color: var(--primary-bg);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 1280px;
-}
-
 .navbar {
   width: 100%;
   background-color: var(--primary-bg);

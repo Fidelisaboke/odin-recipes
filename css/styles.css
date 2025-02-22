@@ -61,3 +61,15 @@ a:hover {
 ul {
   list-style-type: none;
 }
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1280px;
+}

@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Popcorn</title>
-  </head>
-  <body>
-    <a href="../index.html">Back to index</a>
-    <h1>Popcorn</h1>
-    <img src="../images/popcorn.jpg" alt="Popcorn" width="350" height="250" />
-    <h2>Description</h2>
-    <p>
-      Popcorn is a whole grain food and is high in important nutrients like
-      fiber and antioxidants. It is a healthy snack when prepared with minimal
-      oil and not too much salt or sugar.
-    </p>
-    <h2>Ingredients</h2>
-    <ul>
-      <li>3 tablespoons coconut oil or extra virgin olive oil</li>
-      <li>1/3 cup high quality popcorn kernels</li>
-      <li>1 tablespoon butter or more to taste, optional</li>
-      <li>Salt to taste</li>
-    </ul>
-    <h2>Steps</h2>
-    <ol>
-      <li>Heat the oil.</li>
-      <li>Add the popcorn.</li>
-      <li>Cover the pot, remove the head and count 30 seconds.</li>
-      <li>Return the pot to the heat.</li>
-      <li>
-        Once the popping slows to several seconds between pops, remove the pot
-        from the heat.
-      </li>
-      <li>Remove the lid and dump the popcorn into a bowl.</li>
-      <li>Melt the butter in the warm pot and drizzle over the popcorn.</li>
-      <li>Sprinkle with salt.</li>
-    </ol>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/recipes.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Popcorn</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Home link -->
+    <div class="home-link">
+      <a href="../index.html">Back to home</a>
+    </div>
+
+    <!-- Recipe header -->
+    <div class="recipe-header">
+      <div class="recipe-image">
+        <img src="../images/popcorn.png" alt="Popcorn" width="256" height="256" />
+      </div>
+      <div class="header-info">
+        <h1>Popcorn</h1>
+        <p>Simple Popcorn Recipe</p>
+        <div class="rating">
+          <span>Rating: 4.5</span>
+          <span>Reviews: 100</span>
+        </div>
+        <div class="time">
+          <span>Prep: 10 mins</span>
+          <span>Cook: 1 hr</span>
+          <span>Total: 1 hr 10 mins</span>
+        </div>
+        <div class="actions">
+          <button title="Add to favourites">
+            <i class='bx bx-bookmark'></i>
+          </button>
+          <button title="Share">
+            <i class="bx bx-share-alt"></i>
+          </button>
+          <button class="Print">
+            <i class="bx bx-printer"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jump to section -->
+    <div class="jump-to">
+      <h2>Jump to:</h2>
+      <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#steps">Steps</a></li>
+      </ul>
+    </div>
+
+    <!-- Recipe content -->
+    <div class="recipe-content">
+      <!-- Description -->
+      <div class="recipe-description">
+        <h2 id="description">Description</h2>
+        <p>
+          Popcorn is a whole grain food and is high in important nutrients like
+          fiber and antioxidants. It is a healthy snack when prepared with minimal
+          oil and not too much salt or sugar.
+        </p>
+      </div>
+
+      <!-- Instructions -->
+      <div class="recipe-instructions">
+        <div class="card recipe-ingredients">
+          <h2 id="ingredients">Ingredients</h2>
+          <ul>
+            <ul>
+              <li>3 tablespoons coconut oil or extra virgin olive oil</li>
+              <li>1/3 cup high quality popcorn kernels</li>
+              <li>1 tablespoon butter or more to taste, optional</li>
+              <li>Salt to taste</li>
+            </ul>
+          </ul>
+        </div>
+
+        <!-- Steps -->
+        <div class="card recipe-steps">
+          <h2 id="steps">Steps</h2>
+          <ol>
+            <li>Heat the oil.</li>
+            <li>Add the popcorn.</li>
+            <li>Cover the pot, remove the head and count 30 seconds.</li>
+            <li>Return the pot to the heat.</li>
+            <li>
+              Once the popping slows to several seconds between pops, remove the pot
+              from the heat.
+            </li>
+            <li>Remove the lid and dump the popcorn into a bowl.</li>
+            <li>Melt the butter in the warm pot and drizzle over the popcorn.</li>
+            <li>Sprinkle with salt.</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

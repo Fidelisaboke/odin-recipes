@@ -28,3 +28,27 @@ btnThemeSwitch.addEventListener("click", () => {
         isLightMode ? "bx-moon" : "bx-sun"
     );
 });
+
+// Responsive nav links menu
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const hamburgerBtnIcon = hamburgerBtn.querySelector("i");
+const mobileMenu = document.getElementById("responsive-nav-links");
+mobileMenu.style.display = 'none';
+
+hamburgerBtn.addEventListener("click", ()=>{
+    const hamburgerBtnIconClass = hamburgerBtnIcon.classList[1];
+
+    if (mobileMenu.style.display == '' || mobileMenu.style.display == 'none') {
+        mobileMenu.style.display = 'flex';
+        hamburgerBtnIcon.classList.replace(
+            hamburgerBtnIconClass,
+            'bx-x'
+        );
+    } else {
+        mobileMenu.style.display = 'none';
+        hamburgerBtnIcon.classList.replace(
+            hamburgerBtnIconClass,
+            'bx-menu'
+        );
+    }
+})

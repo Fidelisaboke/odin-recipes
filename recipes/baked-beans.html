@@ -7,97 +7,120 @@
   <link rel="stylesheet" href="../css/recipes.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Baked Beans</title>
+  <script src="../js/theme-switcher.js" defer></script>
 </head>
 
 <body>
   <div class="container">
-    <!-- Home link -->
-    <div class="home-link">
-      <a href="../index.html">Back to home</a>
-    </div>
 
-    <!-- Recipe header -->
-    <div class="recipe-header">
-      <div class="recipe-image">
-        <img src="../images/baked-beans.jpg" alt="Baked Beans" width="256" height="256" />
-      </div>
-      <div class="header-info">
-        <h1>Baked Beans</h1>
-        <p>Simple Baked Beans Recipe</p>
-        <div class="rating">
-          <span>Rating: 4.5</span>
-          <span>Reviews: 100</span>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <i class="bx bx-bowl-hot"></i>
         </div>
-        <div class="time">
-          <span>Prep: 10 mins</span>
-          <span>Cook: 1 hr</span>
-          <span>Total: 1 hr 10 mins</span>
-        </div>
-        <div class="actions">
-          <button title="Add to favourites">
-            <i class='bx bx-bookmark'></i>
-          </button>
-          <button title="Share">
-            <i class="bx bx-share-alt"></i>
-          </button>
-          <button class="Print">
-            <i class="bx bx-printer"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Jump to section -->
-    <div class="jump-to">
-      <h2>Jump to:</h2>
-      <ul>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#ingredients">Ingredients</a></li>
-        <li><a href="#steps">Steps</a></li>
-      </ul>
-    </div>
-
-    <!-- Recipe content -->
-    <div class="recipe-content">
-      <!-- Description -->
-      <div class="recipe-description">
-        <h2 id="description">Description</h2>
-        <p>
-          Baked beans is a dish traditionally containing white beans which are
-          parboiled and then baked at a low temperature for a lengthy period
-          of time in some sort of sauce.
-        </p>
-      </div>
-
-      <!-- Instructions -->
-      <div class="recipe-instructions">
-        <!-- Ingredients -->
-        <div class="card recipe-ingredients">
-          <h2 id="ingredients">Ingredients</h2>
+        <div class="nav-links">
           <ul>
-            <li>1/2 pound bacon, chopped</li>
-            <li>1 onion, finely diced</li>
-            <li>2 cans of baked beans</li>
-            <li>1/4 cup brown sugar</li>
-            <li>1/4 cup ketchup</li>
-            <li>1/4 cup prepared mustard, or to taste</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recipes</a></li>
           </ul>
         </div>
+        <form action="#">
+          <div class="search-field">
+            <input type="search" id="search-recipe" name="search-recipe" placeholder="Search..." />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </div>
+        </form>
+        <div class="theme-switcher">
+          <i class="bx bx-moon" id="theme-switch"></i>
+        </div>
+      </nav>
+    </div>
 
-        <!-- Steps -->
-        <div class="card recipe-steps">
-          <h2 id="steps">Steps</h2>
-          <ol>
-            <li>Place bacon in a large, deep skillet.</li>
-            <li>Cook over medium high heat until evenly brown.</li>
-            <li>Add the onion and saute until tender.</li>
-            <li>Drain excess oil, if desired</li>
-            <li>Stir in beans, brown sugar, ketchup, and mustard.</li>
-            <li>Cook, stirring occasionally, until bubbly.</li>
-          </ol>
+    <div class="content">
+      <!-- Recipe header -->
+      <div class="recipe-header">
+        <div class="recipe-image">
+          <img src="../images/baked-beans.jpg" alt="Baked Beans" width="256" height="256" />
+        </div>
+        <div class="header-info">
+          <h1>Baked Beans</h1>
+          <p>Simple Baked Beans Recipe</p>
+          <div class="rating">
+            <span>Rating: <span id="rating-value">4.5</span>
+              <span>|</span>
+              <span>Reviews: <span id="review-count">100</span>
+          </div>
+          <div class="time">
+            <span>Prep: 10 mins</span>
+            <span>|</span>
+            <span>Cook: 1 hr</span>
+            <span>|</span>
+            <span>Total: 1 hr 10 mins</span>
+          </div>
+          <div class="actions">
+            <button title="Add to favourites">
+              <i class='bx bx-bookmark'></i>
+            </button>
+            <button title="Share">
+              <i class="bx bx-share-alt"></i>
+            </button>
+            <button class="Print">
+              <i class="bx bx-printer"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe content -->
+      <div class="content">
+        <!-- Jump to section -->
+        <div class="jump-to">
+          <a href="#ingredients">Jump to Recipe</a>
         </div>
 
+        <!-- Description -->
+        <div class="recipe-description">
+          <h2 id="description">Description</h2>
+          <p>
+            Baked beans is a dish traditionally containing white beans which are
+            parboiled and then baked at a low temperature for a lengthy period
+            of time in some sort of sauce.
+          </p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="recipe-instructions">
+          <!-- Ingredients -->
+          <div class="card recipe-ingredients">
+            <h2 id="ingredients">Ingredients</h2>
+            <ul>
+              <li>1/2 pound bacon, chopped</li>
+              <li>1 onion, finely diced</li>
+              <li>2 cans of baked beans</li>
+              <li>1/4 cup brown sugar</li>
+              <li>1/4 cup ketchup</li>
+              <li>1/4 cup prepared mustard, or to taste</li>
+            </ul>
+          </div>
+
+          <!-- Steps -->
+          <div class="card recipe-steps">
+            <h2 id="steps">Steps</h2>
+            <ol>
+              <li>Place bacon in a large, deep skillet.</li>
+              <li>Cook over medium high heat until evenly brown.</li>
+              <li>Add the onion and saute until tender.</li>
+              <li>Drain excess oil, if desired</li>
+              <li>Stir in beans, brown sugar, ketchup, and mustard.</li>
+              <li>Cook, stirring occasionally, until bubbly.</li>
+            </ol>
+          </div>
+
+        </div>
       </div>
+      
     </div>
   </div>
 </body>

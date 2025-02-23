@@ -26,6 +26,7 @@ code .
 - Right-click on the `index.html` file and open it with the browser of your choice.
 - Alternatively, if you have the Live Server VS Code extension, click on `Go Live`,
 at the bottom right of the code editor. This opens the index page.
+To view the pages on GitHub, click [here](fidelisaboke.github.io/odin-recipes/)
 
 ## Project Structure
 ```

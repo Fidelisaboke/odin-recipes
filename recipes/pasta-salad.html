@@ -7,98 +7,118 @@
   <link rel="stylesheet" href="../css/recipes.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Pasta Salad</title>
+  <script src="../js/theme-switcher.js" defer></script>
 </head>
 
 <body>
   <div class="container">
-    <!-- Home link -->
-    <div class="home-link">
-      <a href="../index.html">Back to home</a>
-    </div>
 
-    <!-- Recipe header -->
-    <div class="recipe-header">
-      <div class="recipe-image">
-        <img src="../images/pasta-salad.jpg" alt="Pasta Salad" width="256" height="256" />
-      </div>
-      <div class="header-info">
-        <h1>Pasta Salad</h1>
-        <p>A colorful, easy to make, and delicious summer dish.</p>
-        <div class="rating">
-          <span>Rating: 4.5</span>
-          <span>Reviews: 100</span>
-        </div>
-        <div class="time">
-          <span>Prep: 10 mins</span>
-          <span>Cook: 1 hr</span>
-          <span>Total: 1 hr 10 mins</span>
-        </div>
-        <div class="actions">
-          <button title="Add to favourites">
-            <i class="bx bx-bookmark"></i>
-          </button>
-          <button title="Share">
-            <i class="bx bx-share-alt"></i>
-          </button>
-          <button class="Print">
-            <i class="bx bx-printer"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Jump to section -->
-    <div class="jump-to">
-      <h2>Jump to:</h2>
-      <ul>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#ingredients">Ingredients</a></li>
-        <li><a href="#steps">Steps</a></li>
-      </ul>
-    </div>
-
-    <!-- Recipe content -->
-    <div class="recipe-content">
-      <!-- Description -->
-      <div class="recipe-description">
-        <h2 id="description">Description</h2>
-        <p>
-          Pasta salad is a dish prepared with one or more types of pasta,
-          usually chilled, and most often tossed in a vinegar, oil, or
-          mayonnaise-based dressing. It is typically served as an appetizer,
-          side dish, or a main course.
-        </p>
-      </div>
-
-      <!-- Instructions -->
-      <div class="recipe-instructions">
-        <!-- Ingredients -->
-        <div class="card recipe-ingredients">
-          <h2 id="ingredients">Ingredients</h2>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="nav-links">
           <ul>
-            <li>Pasta</li>
-            <li>Dressing</li>
-            <li>Seasoning mix</li>
-            <li>Cherry tomatoes</li>
-            <li>Black olives</li>
-            <li>Bell peppers - green, yellow and red</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recipes</a></li>
           </ul>
         </div>
+        <form action="#">
+          <div class="search-field">
+            <input type="search" id="search-recipe" name="search-recipe" placeholder="Search..." />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </div>
+        </form>
+        <div class="theme-switcher">
+          <i class="bx bx-moon" id="theme-switch"></i>
+        </div>
+      </nav>
+    </div>
 
-        <!-- Steps -->
-        <div class="card recipe-steps">
-          <h2 id="steps">Steps</h2>
-          <ol>
-            <li>Cook and drain the pasta.</li>
-            <li>Whisk the dressing with seasoning mix.</li>
-            <li>
-              Combine the pasta with vegetables, then toss in the seasoned
-              dressing.
-            </li>
-          </ol>
+    <div class="content">
+      <!-- Recipe header -->
+      <div class="recipe-header">
+        <div class="recipe-image">
+          <img src="../images/pasta-salad.jpg" alt="Pasta Salad" width="256" height="256" />
+        </div>
+        <div class="header-info">
+          <h1>Pasta Salad</h1>
+          <p>A colorful, easy to make, and delicious summer dish.</p>
+          <div class="rating">
+            <span>Rating: <span id="rating-value">4.5</span></span>
+            <span>|</span>
+            <span>Reviews: <span id="review-count">100</span></span>
+          </div>
+          <div class="time">
+            <span>Prep: 10 mins</span>
+            <span>|</span>
+            <span>Cook: 1 hr</span>
+            <span>|</span>
+            <span>Total: 1 hr 10 mins</span>
+          </div>
+          <div class="actions">
+            <button title="Add to favourites">
+              <i class="bx bx-bookmark"></i>
+            </button>
+            <button title="Share">
+              <i class="bx bx-share-alt"></i>
+            </button>
+            <button class="Print">
+              <i class="bx bx-printer"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe content -->
+      <div class="recipe-content">
+        <!-- Jump to section -->
+        <div class="jump-to">
+          <a href="#ingredients">Jump to Recipe</a>
         </div>
 
+        <!-- Description -->
+        <div class="recipe-description">
+          <h2 id="description">Description</h2>
+          <p>
+            Pasta salad is a dish prepared with one or more types of pasta,
+            usually chilled, and most often tossed in a vinegar, oil, or
+            mayonnaise-based dressing. It is typically served as an appetizer,
+            side dish, or a main course.
+          </p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="recipe-instructions">
+          <!-- Ingredients -->
+          <div class="card recipe-ingredients">
+            <h2 id="ingredients">Ingredients</h2>
+            <ul>
+              <li>Pasta</li>
+              <li>Dressing</li>
+              <li>Seasoning mix</li>
+              <li>Cherry tomatoes</li>
+              <li>Black olives</li>
+              <li>Bell peppers - green, yellow and red</li>
+            </ul>
+          </div>
+
+          <!-- Steps -->
+          <div class="card recipe-steps">
+            <h2 id="steps">Steps</h2>
+            <ol>
+              <li>Cook and drain the pasta.</li>
+              <li>Whisk the dressing with seasoning mix.</li>
+              <li>
+                Combine the pasta with vegetables, then toss in the seasoned
+                dressing.
+              </li>
+            </ol>
+          </div>
+
+        </div>
       </div>
+
     </div>
 
   </div>

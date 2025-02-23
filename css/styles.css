@@ -99,84 +99,6 @@ body {
   margin: 0 auto;
 }
 
-.nav-links ul li {
-  display: inline;
-  margin: 1.5rem;
-}
-
-.navbar form {
-  flex: 0.5 1 auto;
-}
-
-form .search-field {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
-form .search-field input {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid var(--primary-accent);
-  border-radius: 5px;
-  margin-right: 10px;
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
-}
-
-form .search-field input:focus {
-  outline: 2px solid var(--secondary-accent);
-}
-
-form .search-field input::placeholder {
-  color: var(--placeholder-text);
-}
-
-form .search-field input:focus::placeholder {
-  color: transparent;
-}
-
-form .search-field button {
-  position: absolute;
-  right: 10px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid var(--primary-accent);
-  border-radius: 0 5px 5px 0;
-  background-color: var(--primary-accent);
-  color: var(--primary-text);
-}
-
-form .search-field button:hover {
-  background-color: var(--primary-accent-hover);
-}
-
-.theme-switcher {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.theme-switcher i {
-  padding: 10px;
-  font-size: 1.2rem;
-  border: 1px solid var(--border-color);
-  border-radius: 100%;
-  color: var(--primary-text);
-  margin: 10px;
-}
-
-.theme-switcher i:hover {
-  background-color: var(--primary-accent);
-  border: 1px solid var(--primary-accent);
-  color: var(--link-text);
-}
-
-
 #hamburger-btn {
   display: none;
   background: none;
@@ -214,7 +136,83 @@ form .search-field button:hover {
   color: white;
 }
 
-/* Container for content after nav link */
+.nav-links ul li {
+  display: inline;
+  margin: 1.5rem;
+}
+
+.navbar form {
+  flex: 0.5 1 auto;
+}
+
+form .search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+form .search-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--primary-accent);
+  border-radius: 5px;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+form .search-field input:focus {
+  outline: 2px solid var(--secondary-accent);
+}
+
+form .search-field input::placeholder {
+  color: var(--placeholder-text);
+}
+
+form .search-field input:focus::placeholder {
+  color: transparent;
+}
+
+form .search-field button {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--primary-accent);
+  border-radius: 0 5px 5px 0;
+  background-color: var(--primary-accent);
+  color: var(--primary-text);
+}
+
+form .search-field button:hover {
+  background-color: var(--primary-accent-hover);
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switcher i {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100%;
+  color: var(--primary-text);
+  margin: 10px;
+}
+
+.theme-switcher i:hover {
+  background-color: var(--primary-accent);
+  border: 1px solid var(--primary-accent);
+  color: var(--link-text);
+}
+
+/* Container for content after navbar */
 .content {
   margin-top: 60px;
   width: 100%;

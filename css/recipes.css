@@ -6,6 +6,7 @@
     padding: 20px;
     background-color: var(--secondary-bg);
     color: var(--secondary-text);
+    gap: 10px;
 }
 
 .recipe-image {
@@ -30,6 +31,11 @@
     padding: 20px;
 }
 
+.header-info p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .header-info .rating{
     font-size: 0.85rem;
     font-weight: 700;
@@ -37,6 +43,7 @@
 
 .header-info .time {
     font-weight: 500;
+    text-align: center;
 }
 
 .header-info .actions {
@@ -91,31 +98,79 @@
 }
 
 .recipe-description h2 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
+}
+
+.recipe-description p {
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .recipe-instructions {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 20px;
+    gap: 4.5rem;
 }
 
 .recipe-instructions .card {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 0 auto;
-    line-height: 1.5rem;
     background-color: var(--secondary-bg);
     color: var(--secondary-text);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .recipe-instructions .card h2 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
+}
+
+.recipe-ingredients ul {
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .recipe-steps ol {
     list-style-position: inside;
+}
+
+/* Responsive styles */
+/* Small devices (between 600px and 768px) */
+@media screen and (max-width: 768px) {
+    .header-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-info p {
+        font-size: 1rem;
+    }
+
+    .recipe-description h2 {
+        font-size: 1.4rem;
+    }
+
+    .recipe-description p {
+        font-size: 1rem;
+    }
+
+    .recipe-instructions h2 {
+        font-size: 1rem;
+    }
+
+    .recipe-instructions .card {
+        font-size: 1rem;
+    }
+
+    .recipe-info .time {
+        font-size: 0.75rem;
+    }
 }

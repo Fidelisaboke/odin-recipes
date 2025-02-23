@@ -15,8 +15,8 @@
 :root {
   --primary-bg: #1c1c1c;
   --primary-text: #ffffff;
-  --primary-accent: #00bfff;
-  --primary-accent-hover: #2dacd6;
+  --primary-accent: #00afe9;
+  --primary-accent-hover: #008dbc;
 
   --secondary-bg: #292929;
   --secondary-text: #ffffff;
@@ -67,9 +67,177 @@ body {
   color: var(--primary-text);
 }
 
+/* Container within body */
 .container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1280px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--primary-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 60px;
+  max-width: 1280px;
+  color: var(--primary-text);
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid var(--border-color);
+  color: var(--primary-text);
+  height: 42px;
+  width: 42px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.navbar .logo i {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.nav-links ul li {
+  display: inline;
+  margin: 1.5rem;
+}
+
+.navbar form {
+  flex: 0.5 1 auto;
+}
+
+form .search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+form .search-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--primary-accent);
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+form .search-field input:focus {
+  outline: 2px solid var(--secondary-accent);
+}
+
+form .search-field input::placeholder {
+  color: var(--placeholder-text);
+}
+
+form .search-field input:focus::placeholder {
+  color: transparent;
+}
+
+form .search-field button {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--primary-accent);
+  border-radius: 0 5px 5px 0;
+  background-color: var(--primary-accent);
+  color: var(--primary-text);
+}
+
+form .search-field button:hover {
+  background-color: var(--primary-accent-hover);
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switcher i {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100%;
+  color: var(--primary-text);
+  margin: 10px;
+}
+
+.theme-switcher i:hover {
+  background-color: var(--primary-accent);
+  border: 1px solid var(--primary-accent);
+  color: var(--link-text);
+}
+
+.content {
+  margin-top: 60px;
+  width: 100%;
+}
+
+/* Responsive styles */
+/* Small devices (between 600px and 768px) */
+@media screen and (max-width: 768px) {
+  .navbar nav {
+    font-size: 1rem;
+  }
+
+  .navbar .logo {
+    height: 36px;
+    width: 36px;
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices (less than 600px) */
+@media screen and (max-width: 600px) {
+  .navbar nav {
+    font-size: 0.8rem;
+  }
+
+  .navbar .logo {
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+  }
+
+  .nav-links ul li {
+    margin: 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  form .search-field input {
+    font-size: 0.8rem;
+  }
+
+  form .search-field button {
+    font-size: 0.8rem;
+  }
 }

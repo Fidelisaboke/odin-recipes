@@ -65,6 +65,7 @@
   flex-direction: column;
   background-color: var(--secondary-bg);
   color: var(--secondary-text);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 20px 0;

@@ -35,7 +35,7 @@ const hamburgerBtnIcon = hamburgerBtn.querySelector("i");
 const mobileMenu = document.getElementById("responsive-nav-links");
 mobileMenu.style.display = 'none';
 
-hamburgerBtn.addEventListener("click", ()=>{
+hamburgerBtn.addEventListener("click", () => {
     const hamburgerBtnIconClass = hamburgerBtnIcon.classList[1];
 
     if (mobileMenu.style.display == '' || mobileMenu.style.display == 'none') {
@@ -52,3 +52,53 @@ hamburgerBtn.addEventListener("click", ()=>{
         );
     }
 })
+
+
+function printRecipe() {
+    /**
+     * Prints the recipe header and instructions.
+     */
+
+    const recipeHeaderDiv = document.querySelector('.recipe-header').cloneNode(true);
+    const recipeInstructionsDiv = document.querySelector('.recipe-instructions').cloneNode(true);
+
+    // Remove buttons before printing
+    const actionsDiv = recipeHeaderDiv.querySelector('.actions');
+    if (actionsDiv) actionsDiv.remove();
+
+    const printContent = recipeHeaderDiv.outerHTML + recipeInstructionsDiv.outerHTML;
+
+    // Print window
+    const printWindow = window.open('', '', 'width=800,height=600');
+    let printWindowHTML = `
+        <html>
+        <head>
+            <title>Odin Recipes</title>
+            <style>
+                body {
+                    font-family: Roboto, Verdana, sans-serif;
+                    color: black;
+                    background-color: white;
+                }
+                h1, h2 {
+                    color: black;
+                }
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+        </head>
+        <body>
+            ${printContent}
+        </body>
+        </html>
+    `;
+    printWindow.document.write(printWindowHTML);
+    printWindow.document.close();
+    printWindow.addEventListener('load', () => {
+        printWindow.focus();
+        printWindow.print();
+        printWindow.close();
+    });
+}
